@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run Action
+        uses: ./
+
+      - name: Run Action - max length
+        uses: ./
+        with:
+          max_length: 20
+
+      - name: Run Action - count
+        uses: ./
+        with:
+          count: 40
