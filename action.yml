@@ -4,7 +4,7 @@ author: Peter Murray
 
 inputs:
   max_length:
-    description: The value for the variable to be stored
+    description: The maximum length of the names to generate, could be shorter
     required: false
 
   count:
@@ -20,5 +20,5 @@ outputs:
     description: The first name that was generated
 
 runs:
-  using: node16
+  using: node20
   main: 'dist/index.js'
