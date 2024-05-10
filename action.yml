@@ -2,6 +2,10 @@ name: 'Random Name Generator'
 description: Creates randomized names
 author: Peter Murray
 
+branding:
+  icon: tag
+  color: white
+
 inputs:
   max_length:
     description: The maximum length of the names to generate, could be shorter
