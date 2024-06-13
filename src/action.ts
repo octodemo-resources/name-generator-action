@@ -26,4 +26,5 @@ async function exec() {
   core.info(JSON.stringify(results));
   core.setOutput('name', results[0]);
   core.setOutput('names', JSON.stringify(results));
+  core.setOutput('names_comma_separated', results.join(', '));
 }

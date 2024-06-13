@@ -20,6 +20,9 @@ outputs:
   names:
     description: The complete array of names that were generated as a JSON encoded string
 
+  names_comma_separated:
+    description: The complete array of names that were generated as a comma separated string
+
   name:
     description: The first name that was generated
 
